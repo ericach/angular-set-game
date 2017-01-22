@@ -1,0 +1,1 @@
+{"version":3,"sources":["app/setgame/index.ts"],"names":[],"mappings":";;;;AAAA,iBAAc,qBAAqB,CAAC,EAAA;AACpC,iBAAc,qBAAqB,CAAC,EAAA;AACpC,iBAAc,kBAAkB,CAAC,EAAA","file":"index.js","sourcesContent":["export * from './setgame.component';\nexport * from './setcard.component';\nexport * from './setgame.routes';\n"]}

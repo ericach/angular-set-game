@@ -1,0 +1,114 @@
+#set-game {
+  .gameboard {
+    border: 1px solid gray;
+    background-color: whitesmoke;
+    width: 1140px;
+    height: 556px;
+
+    .card-wrapper {
+      display: flex;
+      flex-flow: row wrap;
+    }
+  }
+
+  .footer {
+    margin: 16px 0px;
+
+    div {
+      display: inline-block;
+    }
+  }
+
+  .set-card {
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: white;
+
+    width: 250px;
+    height: 150px;
+    margin: 17px;
+
+    &:hover {
+      cursor: pointer;
+      border-color: color(primary);
+    }
+
+    &.selected {
+      border-color: blue;
+    }
+
+    .card-wrapper {
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      .inner-card {
+        margin: 20px;
+        display: inline-block;
+
+        &.solid {
+          &.red {
+            background-color: color(red-card);
+          }
+
+          &.purple {
+            background-color: color(purple-card);
+          }
+
+          &.green {
+            background-color: color(green-card);
+          }
+        }
+
+        &.striped {
+          opacity: .5;
+
+          &.red {
+            background-color: color(red-card);
+          }
+
+          &.purple {
+            background-color: color(purple-card);
+          }
+
+          &.green {
+            background-color: color(green-card);
+          }
+        }
+
+        &.open {
+          &.red {
+            border: 2px solid color(red-card);
+          }
+
+          &.purple {
+            border: 2px solid color(purple-card);
+          }
+
+          &.green {
+            border: 2px solid color(green-card);
+          }
+        }
+
+        &.oval {
+          border-radius: 22px;
+          width: 40px;
+          height: 75px;
+        }
+
+        &.diamond {
+          width: 40px;
+          height: 75px;
+        }
+
+        &.squiggle {
+          width: 40px;
+          height: 75px;
+          -webkit-transform: skew(20deg);
+          -moz-transform: skew(20deg);
+          -o-transform: skew(20deg);
+        }
+      }
+    }
+  }
+}

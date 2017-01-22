@@ -1,0 +1,5 @@
+<div class="set-card" (click)="toggleCardSelection()" [ngClass]="{'selected': selected}">
+    <div class="card-wrapper">
+        <div *ngFor='let key of countInternal' class="inner-card" [ngClass]="[color, fill, shape]"></div>
+    </div>
+</div>

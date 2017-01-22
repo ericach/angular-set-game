@@ -1,0 +1,23 @@
+<div id="set-game">
+    <div class="gameboard">
+        <div class="card-wrapper">
+            <div *ngFor="let card of board">
+                <as-set-card [color]="card.color" [count]="card.count" [fill]="card.fill" [shape]="card.shape" (cardSelected)="newCardSelected($event)" (cardDeselected)="cardDeselected($event)"></as-set-card>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            Cards Left: <span>{{ cardDeck.length }} | </span>
+        </div>
+        <div>
+            Completed Sets: <span>{{ completedCount }}</span>
+        </div>
+        <div>
+            <button (click)="shuffle()">Shuffle Cards</button>
+        </div>
+        <div>
+            <button (click)="reset()">Start Over</button>
+        </div>
+    </div>
+</div>
